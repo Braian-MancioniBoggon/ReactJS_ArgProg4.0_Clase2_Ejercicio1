@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 2 - Ejercicio 1</title>
+    <link rel="shortcut icon" href="src/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="consigna" class="hero">
+            <div class="contenedor">
+                <h1>Clase 2 - Ejercicio 1</h1>
+                <p><u>Tengo desarrollada la siguiente función en javascript</u></p>
+                <pre>
+                    <code class="language-javascript">function suma (a,b,callback) {
+                        let c = a +b;
+                        callback();
+                    }</code>
+                </pre>
+                <ol>
+                    <li><u>¿Que es el tercer parámetro recibido?</u></li>
+                    <p>El tercer parametro recibido es una función, por ejemplo, en este caso puede ser la funcion que permite mostrar en pantalla variable "c" si se la pasa como parametro en "callback()".</p>
+                    <li><u>¿En que casos es obligatorio desarrollar este tipo de funciones?</u></li>
+                    <p>Este tipo de funciones se utilizan para modularizar el codigo y lograr ahorrarnos las escritura de codigo repetido como por ejemplo mostrar por pantalla el resultado de una suma, una resta, una multiplicacion o una division.</p>
+                </ol>
+                <div class="contenedorEjemplo">
+                    <input id="primerNumero" type="number" placeholder="Primer numero">
+                    <input id="segundoNumero" type="number" placeholder="Segundo numero">
+                    <div class="contenedorBotones">
+                        <div>
+                            <button id="suma">Sumar</button>
+                            <button id="resta">Restar</button>
+                        </div>
+                        <div>
+                            <button id="multiplicacion">Multiplicar</button>
+                            <button id="division">Dividir</button>
+                        </div>
+                    </div>
+                    <input id="resultado" type="number" placeholder="Resultado" disabled>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
